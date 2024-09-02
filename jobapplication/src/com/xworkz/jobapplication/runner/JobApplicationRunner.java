@@ -12,7 +12,7 @@ public class JobApplicationRunner {
 		JobApplicationDto jobApplicationDto = new JobApplicationDto();
 		jobApplicationDto.setApplicantName("Mallikharjuna");
 		jobApplicationDto.setEmail("mallikharjuna@gmail.com");
-		jobApplicationDto.setPhoneNumber(9988776622L);
+		jobApplicationDto.setPhoneNumber(9988776633L);
 		jobApplicationDto.setDob("01-01-2000");
 		jobApplicationDto.setJobRoleAppliedFor(JobRoleAppliedFor.DEVELOPER.toString());
 		jobApplicationDto.setQualification(Qualification.BTECH.toString());
