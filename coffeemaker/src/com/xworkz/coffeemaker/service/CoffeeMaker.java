@@ -33,4 +33,21 @@ public class CoffeeMaker {
 			}
 			return "Not Saved";
 		}
+		//updating by product code
+		public String updateByProductCode(int productCode, String newBrandName ) {
+			if(productCode != 0) {
+				for(int index = 0; index < listOfCoffeeMakerDto.length; index++) {
+					if(listOfCoffeeMakerDto[index].getProductCode() == productCode ) {
+						listOfCoffeeMakerDto[index].setBrandName(newBrandName);
+						System.out.println(listOfCoffeeMakerDto[index]);
+						return "Updated Successfully";
+					}
+				}
+			}
+			return "Product code not found.. pls check details";
+		}
+		//search
+//		public String searchByName(String brandName) {
+//			
+//		}
 }

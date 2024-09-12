@@ -13,6 +13,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 @EqualsAndHashCode
+
 public class CoffeeMakerDto {
 	
 	//properties
