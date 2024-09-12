@@ -23,6 +23,7 @@ public class SandwichMakerRunner {
 		
 		SandwichMaker sandwich = new SandwichMaker(arraySize);
 		
+		while(choice <= 3) {
 		switch(choice) {
 		case 1:
 			System.out.println("Length of the Array is:"+sandwich.getArrayLength());
@@ -74,12 +75,17 @@ public class SandwichMakerRunner {
 			break;
 		case 3:
 			System.out.println("Read operation");
-			int index = scanner.nextInt();
 			SandwichMakerDto sandwichRead = sandwich.read();
-			System.out.println("Sandwich Maker propertie:"+index+""+sandwichRead);
+			System.out.println("Sandwich Maker properties:"+sandwichRead);
 			break;
 		default :
 			System.out.println("Enter the proper values");
+		}
+		System.out.println("Enter the Choice below");
+		System.out.println("Enter '1' to get the Length of the Array");
+		System.out.println("Enter '2' to save the SandwichMakerDto's");
+		System.out.println("Enter '3' to Read SandwichMakerDto's");
+		choice = scanner.nextInt();
 		}
 		scanner.close();
 	}
