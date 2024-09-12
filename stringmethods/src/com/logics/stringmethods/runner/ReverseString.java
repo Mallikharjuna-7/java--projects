@@ -94,7 +94,7 @@ public class ReverseString {
 						count++;	
 					}
 				}
-				System.out.println(" 'you' occurrence count:"+count);
+				System.out.println("'you' occurrence count:"+count);
 			}
 		}
 		
@@ -113,7 +113,7 @@ public class ReverseString {
 						
 						String updateSentence = "";
 						for(int i = 0; i < result.length; i++) {
-							updateSentence += result[i];
+							updateSentence += result[i]+" ";
 						}
 						System.out.println("Updated Sentence:"+updateSentence);
 					}
@@ -137,7 +137,7 @@ public class ReverseString {
 						
 						String updateSentence = "";
 						for(int i = 0; i < result.length; i++) {
-							updateSentence += result[i];
+							updateSentence += result[i]+" ";
 						}
 						System.out.println("Updated Sentence:"+updateSentence);
 					}
@@ -167,6 +167,7 @@ public class ReverseString {
 		
 		int choice = scanner.nextInt();
 		
+		while (choice <= 7) {
 		switch(choice) {
 		case 1:
 			System.out.println("Enter the String Value:");
@@ -205,6 +206,17 @@ public class ReverseString {
 			break;
 		default :
 			System.out.println("Enter the proper values");
+		}
+		System.out.println("-----------------------");
+		System.out.println("Enter the Choice below");
+		System.out.println("1.Reverse String with Length");
+		System.out.println("2.Reverse String without Length");
+		System.out.println("3.Checking Palindrome");
+		System.out.println("4.counting words in given sentence");
+		System.out.println("5.checking \"you\" occurrence count in given sentence");
+		System.out.println("6.replacing word \"you\" with \"not\" in sentence");
+		System.out.println("7.deleting word \"you\" in sentence");
+		choice = scanner.nextInt();
 		}
 		scanner.close();
 	}
