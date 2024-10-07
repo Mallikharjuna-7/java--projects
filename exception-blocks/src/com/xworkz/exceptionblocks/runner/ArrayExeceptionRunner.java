@@ -13,6 +13,7 @@ public class ArrayExeceptionRunner {
 			int[] scores = {45,95,34,67,86};
 			System.out.println("index of 7: "+scores[7]);
 			throw new ArrayExeception("Array out of bound Exception");
+			
 		}finally {
 			System.out.println("final block.. it will always print");
 		}
